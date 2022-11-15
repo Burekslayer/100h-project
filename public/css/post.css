@@ -1,0 +1,34 @@
+img{
+    height: 200px;
+}
+h1{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+.forma{
+    border-bottom: 3px solid black;
+    text-align: center;
+}
+.forma form{
+    display: flex;
+    justify-content: center;
+}
+.forma > form > input{
+    width: 30%;
+}
+ul{
+    display: flex;
+}
+.ulCarousel > li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ulCarousel > li > img{
+    margin: 5px;
+
+}
+.btn-moj{
+    margin-top: 25px;
+}

@@ -1,0 +1,31 @@
+<%- include('partials/header') -%>
+
+    <main class="main-carousel" data-flickity='{ "cellAlign": "right", "contain": true, "wrapAround": true, "selectedAttraction": 0.008, "autoPlay": 5000}'> <!-- "autoPlay": 5000, -->
+            <% if (posts) { %>
+                <% for(let i=0; i<posts.length; i++) { %>
+                    
+                    <div class="carousel-cell">
+                        <div class="homeMainText">
+                            <h1><%= posts[i].title %></h1>
+                            <p><%= posts[i].caption %></p>
+                        </div>
+                        
+                        <img src="<%= posts[i].image %>">
+                    </div>
+                    
+                <% } %> 
+            <% } %>    
+    </main>
+
+    <section id="info">
+        <img src="https://res.cloudinary.com/dn30aabyv/image/upload/v1666377360/images/only-logo_bcywrz.png" alt="only-logo">
+        <h2>The Right Angle</h2>
+        <p>Founded in 2021 by Jelena and Jovana, The Right Angle has rapidly gained an international reputation</p>
+        <p>for excellence in the visual representation of architecture and the built environment. As poineers of digital technologies</p>
+        <p>for graphic representation of the built environment, we continue to operate ahead of the curve, providing progressive and</p>
+        <p>ambitious clients with game changing content</p>
+        <p class="helpLink"><a href="#">See how can we help<i class="fa-solid fa-arrow-right"></i></a></p>
+    </section>
+    
+    
+<%- include('partials/footer') -%>

@@ -1,0 +1,59 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10vw !important;
+    background-color: white;
+    box-shadow: 0 0 20vw 5vw white;
+}
+.footerBtn{
+    border: 2.1px solid #207792;
+    border-radius: 2.5px;
+    margin-bottom: 2.5vw;
+}
+.footerBtn button > i{
+    color: #207792;
+    font-size: 1.3vw
+}
+.footerBtn button{
+    height: 2.8vw;
+    width: 2.8vw;
+    border: 3.5px solid #207792;
+    border-radius: 1.9vw;
+    background-color: white;
+    position: absolute;
+    right: 17vw;
+    bottom: -90.1vh
+}
+.footerMain{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px dashed rgb(70, 70, 70);
+}
+.footerMain > div{
+    display: flex;
+    flex-direction: column;
+}
+.footerMainLogo{
+    font-size: 18px;
+    width: 17%;
+}
+.footerMainLogo > *{
+    margin-bottom: 2vw;
+}
+.footerMainLogo > p {
+    line-height: 27px;
+    text-align: justify;
+}
+.footerMainLogo img{
+    width: 9.2vw;
+}
+.footerMain span{
+    font-size: 20px;
+    font-weight: 1000;
+}
+.footerInfo{
+    display: flex;
+}
+.footerMainFeatured img{
+    width: 10vw;
+}

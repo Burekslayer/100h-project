@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <script src="https://kit.fontawesome.com/855e3f5928.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/post.css">
+</head>
+<body>
+
+    <div class="forma">
+
+        <h1>Slajd slike (gornji deo)</h1>
+
+        <form action="/post/createPost" enctype="multipart/form-data" method='POST'> 
+            <div class="mb-3">
+                <label for="title" class="form-label">Naziv</label>
+                <input type="text" class="form-control" id="title" name="title">
+            </div>
+            <div class="mb-3">
+                <label for="caption" class="form-label">Tekst</label>
+                <input type="text" class="form-control" id="caption" name="caption">
+            </div>
+
+            <div class="mb-3">
+                <label for="upload" class="form-label">Slike</label>
+                <input type="file" class="form-control" id="imageUpload" name="file">   
+            </div>
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary btn-moj" value="Upload">Add Photo</button>      
+            </div>
+            
+        </form>
+
+        <ul class="ulCarousel">
+            <% if (posts) { %>
+                <% for(let i=0; i<posts.length; i++) { %>
+                    <li class="postItem" data-id="<%= posts[i]._id %>">
+                        <img src="<%= posts[i].image %>">
+                        <i class="fa-solid fa-trash del"></i>
+                    </li>
+                <% } %>
+            <% } %>
+        </ul>
+
+    </div>
+
+    <div class="forma">
+        <h1>Home page favourites</h1>
+
+        <form action="/post/createFavourite" enctype="multipart/form-data" method='POST'>
+            <input type="file" class="form-control" id="imageUpload" name="file">
+            <button type="submit" class="btn btn-primary" value="Upload">Add Photo</button>
+        </form>
+
+        <ul class="ulCarousel">
+            <% if(favourites) { %>
+                <% for(let i=0; i<favourites.length; i++) { %>
+                    <li class="favouriteItem" data-id="<%= favourites[i]._id %>">
+                        <img src="<%= favourites[i].image %>">
+                        <i class="fa-solid fa-trash del"></i>
+                    </li>
+                <% } %>
+            <% } %>
+        </ul>
+
+    </div>
+
+    <div class="forma">
+        <h1>Home page featured</h1>
+
+        <form action="/post/createFeatured" enctype="multipart/form-data" method='POST'>
+            <input type="file" class="form-control" id="imageUpload" name="file">
+            <button type="submit" class="btn btn-primary" value="Upload">Add Photo</button>
+        </form>
+
+        <ul class="ulCarousel">
+            <% if (featured) { %>
+                <% for(let i=0; i<featured.length; i++) { %>
+                    <li class="featuredItem" data-id="<%= featured[i]._id %>">
+                        <img src="<%= featured[i].image %>">
+                        <i class="fa-solid fa-trash del"></i>
+                    </li>
+                <% } %>
+            <% } %>
+        </ul>
+    </div>
+
+
+
+    <a href="/logout">Logout</a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

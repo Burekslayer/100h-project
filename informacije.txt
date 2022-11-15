@@ -1,0 +1,2 @@
+Slike crno bele -> hover -> poveca se malo, dobije box shadow i boju
+Services strana -> "Featured" slika se ne pomera, stoji fiksno jedna
