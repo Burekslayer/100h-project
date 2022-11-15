@@ -26,7 +26,8 @@ footer{
 }
 .footerMain{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 1.5vw;
     border-bottom: 2px dashed rgb(70, 70, 70);
 }
 .footerMain > div{
@@ -35,7 +36,7 @@ footer{
 }
 .footerMainLogo{
     font-size: 18px;
-    width: 17%;
+    width: 18%;
 }
 .footerMainLogo > *{
     margin-bottom: 2vw;
@@ -43,6 +44,7 @@ footer{
 .footerMainLogo > p {
     line-height: 27px;
     text-align: justify;
+    hyphens: auto;
 }
 .footerMainLogo img{
     width: 9.2vw;
@@ -51,9 +53,95 @@ footer{
     font-size: 20px;
     font-weight: 1000;
 }
-.footerInfo{
+.footerIcons{
+    font-size: 1.5vw;
     display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+.footerMainServices{
+    line-height: 2vw;
+}  
+.footerMainOther{
+    line-height: 2vw;
+}
+.footerMainFeatured{
+    width: 35%;
+}
+.footerMainFeatured > div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.footerMainFeatured > div p{
+    font-size: 0.8vw;
+    padding: 10px 30px;
+    padding-bottom: 20px;
+    color:rgb(70, 70, 70);
+}
+.footerFeaturedBold{
+    font-size: 0.9vw;
+    color: black;
+    font-weight: 1000;
+}
+.footerMainFeatured i {
+    color: transparent;
+    margin-left: 10px;
+    transition: 0.5s
+}
+.footerMainFeatured > div p > a {
+    line-height: 40px;
 }
 .footerMainFeatured img{
     width: 10vw;
+}
+.footerMainFeatured > div:hover a, .footerMainFeatured > div:hover i{
+    color: blue;
+    transition: 0.5s
+}
+.footerMainFeatured > div:hover{
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.082);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.footerInfo{
+    height: 3vw;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+.footerInfo > div{
+    width: 30%;
+}
+.footerOl{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+.footerOlBorder{
+    border-right: 1px solid black;
+}
+.footerOl li{
+    text-align: center;
+    width: 33%;
+}
+.footerInfoImg{
+    width: 5%;
+}
+.footerInfo{
+    display: flex;
+}
+.lastFI{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: end;
+    height: 30px;
+}
+.lastFI p{
+    margin-right: 10px;
+}
+.lastFI p > span{
+    font-weight: 1000;
 }
