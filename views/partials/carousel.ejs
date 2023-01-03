@@ -1,0 +1,31 @@
+<ol class="carousel-numbers">
+
+</ol>
+<ol class="carousel-fixed">
+    <% if (posts) { %>
+        <% for(let i=0; i<posts.length; i++) { %>
+            <div class="homeMainText text-cell<%=i%>">
+                <h1><%= posts[i].title %></h1>
+                <p><%= posts[i].caption %></p>
+                <button class="secondary-btn">See more</button>
+            </div> 
+        <% } %> 
+    <% } %>
+</ol>
+<div id="carousel-container">
+    <div>
+        <ul id="carousel" class="animate">
+            <% if (posts) { %>
+                <% for(let i=0; i<posts.length; i++) { %>
+                    <li class="slide animate">
+                        <img src="<%= posts[i].image %>">
+                    </li>
+                <% } %> 
+            <% } %>
+        </ul> 
+    </div>
+    <div id="controls">
+        <span id="prev"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1014830/prev.png"></span>
+        <span id="next"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1014830/next.png"></span>
+    </div>
+</div>

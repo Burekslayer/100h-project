@@ -1,24 +1,25 @@
 <%- include('partials/header') -%>
-
-    <main class="main-carousel" data-flickity='{ "cellAlign": "right", "contain": true, "wrapAround": true, "selectedAttraction": 0.008, "autoPlay": 5000}'> <!-- "autoPlay": 5000, -->
+    <main class="main-carousel" data-flickity='{ "cellAlign": "right", "contain": true, "wrapAround": true, "selectedAttraction": 0.005}'>  <!-- "autoPlay": 5000, --> 
             <% if (posts) { %>
                 <% for(let i=0; i<posts.length; i++) { %>
+
                     
                     <div class="carousel-cell">
-                        <div class="homeMainText">
+                        <div class="homeMainText text-cell<%=i%>">
                             <h1><%= posts[i].title %></h1>
                             <p><%= posts[i].caption %></p>
-                        </div>
-                        
+                            <button class="secondary-btn">See more</button>
+                        </div> 
                         <img src="<%= posts[i].image %>">
                     </div>
-                    
                 <% } %> 
-            <% } %>    
-    </main>
+            <% } %> 
+    <!-- <main>
+        <%- include('partials/carousel') -%> -->
+    </main> 
 
     <section id="info">
-        <img src="https://res.cloudinary.com/dn30aabyv/image/upload/v1666377360/images/only-logo_bcywrz.png" alt="only-logo">
+        <img src="https://res.cloudinary.com/dn30aabyv/image/upload/v1668728513/only-logo_ceberg.png" alt="only-logo">
         <h2>The Right Angle</h2>
         <p>Founded in 2021 by Jelena and Jovana, The Right Angle has rapidly gained an international reputation</p>
         <p>for excellence in the visual representation of architecture and the built environment. As poineers of digital technologies</p>
@@ -27,5 +28,216 @@
         <p class="helpLink"><a href="#">See how can we help<i class="fa-solid fa-arrow-right"></i></a></p>
     </section>
     
+    <section class="homeFavourites">
+
+
+        <div class="homeFavouritesHeader favFlex">
+            <h2>Our Favourite Projects</h2>
+            <a href="" class="aFav">All projects</a>
+        </div>
+
+        <div class="favPairOne favFlex">
+            <div class="homeHoverOne favHover">
+                <div class="favImg">
+                    <img src="<%= posts[0].image %>" alt="">
+                </div>
+                
+                <div class="favArrow">
+                    <p><b>Modern Family House</b><br>San Diego, CA</p>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+            <div class="favHover">
+                <div class="favImg">
+                    <img src="<%= posts[0].image %>" alt="">
+                </div>
+                <div class="favArrow">
+                    <p><b>Refurbished City Library</b><br>Naissus, RS</p>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="soloOne favHover favFlex">
+            <h3><span>147+</span><br>rendered buildings, apartment, houses & offices.</h3>
+            <div>
+                <div class="favImg">
+                    <img src="<%= posts[0].image %>" alt="">
+                </div>
+                <div class="favArrow">
+                    <p><b>Modern Family House</b><br>San Diego, CA</p>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="carousel" data-flickity='{ "cellAlign": "center", "contain": true, "wrapAround": true, "selectedAttraction": 0.005, "draggable": false}'>
+            <div class="carousel-cell text-carousel">
+                <h2>" Right Angle provides us with great ideas and with great details about our projects - they're awesome! "</h2>
+                <p>ROBY THOMPSON, CANASTA LLC</p>
+            </div>
+            <div class="carousel-cell text-carousel">
+                <h2>" Oh my dear friends, what'sssss gona BEEEEEEE toniiiight, I dzast wanna say Right Angle is FANTASTIK "</h2>
+                <p>NENAD KNEŽEVIĆ, MONTENEGRO TITOGRAD</p>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="favPairTwo favFlex">
+            <div class="favHover">
+
+                <div class="favImg">
+                    <img src="<%= posts[0].image %>" alt="">
+                </div>
+
+                <div class="favArrow">
+                    <p><b>Two Story House in the Hills</b><br>Santa Fe, CA</p>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+            </div>
+
+            <div class="favHover">
+
+                <div class="favImg">
+                    <img src="<%= posts[0].image %>" alt="">
+                </div>
+
+                <div class="favArrow">
+                    <p><b>Apartment Interior</b><br>Copenhagen, DK</p>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+            </div>
+        </div>
+        <div class="soloTwo favHover favFlex">
+            <div class="favImg">
+                <img src="<%= posts[0].image %>" alt="">
+            </div>
+            <div>
+                <h3>Wonderful experience working with Right Angle Studio for our office building project. Amazing talent!</h3>
+                <p>JENNA KENSIGTON, DARENN & LAURIE GROUP LTD</p>
+                <a href="">Read more <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
     
+    <section id="service-types">
+        <div class="service-title">
+            <h2>Whether you need rendering, sketches or VR,<br><span>our wide array of services</span> got your back -<br>tested and proven in over <span>147 projects</span></h2>
+        </div>
+
+        <div class="service-div">
+            <div class="solo-service">
+                <img src="https://res.cloudinary.com/dn30aabyv/image/upload/v1669912362/service_one_ecilem.png" alt="">
+                <h3>Architecture & Interior</h3>
+                <p>Get the help you need because you need <br>it a lot and them some and them some.</p>
+                <a href="">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="solo-service"> 
+                <img src="https://res.cloudinary.com/dn30aabyv/image/upload/v1669912362/service_two_wbjyu1.png" alt="">
+                <h3>VR preview & 360</h3>
+                <p>Get the help you need because you need <br>it a lot and them some and them some.</p>
+                <a href="">See in VR <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="service-div">
+            <div class="solo-service"> 
+                <img src="https://res.cloudinary.com/dn30aabyv/image/upload/v1669912362/service_three_bpqdbb.png" alt="">
+                <h3>Design</h3>
+                <p>Get the help you need because you need <br>it a lot and them some and them some.</p>
+                <a href="">Get the total package <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="solo-service"> 
+                <img src="https://res.cloudinary.com/dn30aabyv/image/upload/v1669912362/service_four_qfxfkt.png" alt="">
+                <h3>Furniture & Objects</h3>
+                <p>Get the help you need because you need <br>it a lot and them some and them some.</p>
+                <a href="">Browse our items <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="btn-link">
+            <button>Explore our services</button>
+            <a href="">Or see our projects <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <!-- <section id="homeContact">
+        <div class="contact-home-left">
+            <h3>Contact Us</h3>
+            <p>We're happy to answer questions and get you acquaninted with Right Angle studio and our services</p>
+            <span>— Learn the scope of our work</span>
+            <span>— See our pricing information</span>
+            <span>— Explore use cases for you</span>
+        </div>
+
+        <div class="contact-home-right">
+            <form id="contact-form" action="send" method = POST enctype = "multipart/form-data">
+                <div class="full-name contactFlex">
+                    <div>
+                        <label for="first-name">First Name <span>*</span></label>
+                        <input placeholder=" First Name" id="first-name" name="firstName" type="text" class="input-margin" required />
+                    </div>
+
+                    <div>
+                        <label for="last-name">Last Name <span>*</span></label>
+                        <input placeholder=" Last Name" id="last-name" name="lastName" type="text" class="" required />
+                    </div>
+                </div>
+
+                <div class="email-phone contactFlex">
+                    <div>
+                        <label for="email">E-mail <span>*</span></label>
+                        <input placeholder="type your E-mail here" id="email" type="email" name="email" class="input-margin" aria-describedby="emailHelp" required />
+                    </div>
+                    <div>
+                        <label for="phone">Phone</label>
+                        <input placeholder="+ 1 234 567 890" id="phone" type="text" name="phone" class="" />
+                    </div>
+                </div>
+
+                <div class="country-section contactFlex">
+                    <div>
+                        <%- include('partials/country') -%>
+                    </div>  
+                    <div>
+                        <label for="service-type">Service type <span>*</span></label>
+                        <select class="countries" id="service-type" name="serviceType" required>
+                            <option value="" selected disabled hidden>Please select one</option>
+                            <option value="Architecture & interior">Architecture & interior</option>
+                            <option value="VR previews & 360">VR previews & 360</option>
+                            <option value="Design">Design</option>
+                            <option value="Furniture & Objects">Furniture & Objects</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="message">
+                    <label for="message">Your message <span>*</span></label>
+                    <textarea name="message" id="message" rows="3" placeholder="How can Right Angle help with your project?" required></textarea>
+                </div>
+
+                <div class="privacy-policy-text">
+                    <p>By clicking "Send", I acknowledge receipt of the Right Angle Studio <a href="">Privaci Policy</a>.</p>
+                    <p>Fields marked with an asterisk (<span>*</span>) are required.</p>
+                </div>
+                
+                <button type="submit" value="submit" class="main-btn">Send request</button>
+            </form>
+        </div>
+    </section> -->
+    
+    <section class="mini-contact">
+        <div>
+            <p><span>Ready to start?</span> Let's create something amazing!</p>
+        </div>
+        <div class="mc-btn">
+            <button class="mc-btn-one" onclick="window.location.href='/Contact'">Contact Us</button>
+            <button class="mc-btn-two">Check out our services</button>  
+        </div>
+    </section>
+
 <%- include('partials/footer') -%>

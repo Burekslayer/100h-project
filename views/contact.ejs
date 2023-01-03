@@ -1,0 +1,118 @@
+<%- include('partials/header') -%>
+
+<section class="contact-main">
+    <h2>Think we're a match?</h2>
+    <h2>Let's get in touch!</h2>
+    <p>
+        In the constantly evolving space of digital media and graphic representation, we founded Right Angle<br>
+        Studio on the principle of continued evolution of services maintaining a position at the forefront of the<br>
+        industry. This current snapshot of our services is presented with the caveat that tomorrow's<br>
+        technology will always drive the direction of our endeavours, because times change...
+    </p>
+</section>
+
+<section id="homeContact" class="contactContact">
+    <div id="contact-contact">
+    </div>
+
+    <div class="contact-home-right">
+        <form id="contact-form" action="send" method = POST enctype = "multipart/form-data">
+            <div class="full-name contactFlex">
+                <div>
+                    <label for="first-name">First Name <span>*</span></label>
+                    <input placeholder=" First Name" id="first-name" name="firstName" type="text" class="input-margin" required />
+                </div>
+
+                <div>
+                    <label for="last-name">Last Name <span>*</span></label>
+                    <input placeholder=" Last Name" id="last-name" name="lastName" type="text" class="" required />
+                </div>
+            </div>
+
+            <div class="email-phone contactFlex">
+                <div>
+                    <label for="email">E-mail <span>*</span></label>
+                    <input placeholder="type your E-mail here" id="email" type="email" name="email" class="input-margin" aria-describedby="emailHelp" required />
+                </div>
+                <div>
+                    <label for="phone">Phone</label>
+                    <input placeholder="+ 1 234 567 890" id="phone" type="text" name="phone" class="" />
+                </div>
+            </div>
+
+            <div class="country-section contactFlex">
+                <div>
+                    <%- include('partials/country') -%>
+                </div>  
+                <div>
+                    <label for="service-type">Service type <span>*</span></label>
+                    <select class="countries" id="service-type" name="serviceType" required>
+                        <option value="" selected disabled hidden>Please select one</option>
+                        <option value="Architecture & interior">Architecture & interior</option>
+                        <option value="VR previews & 360">VR previews & 360</option>
+                        <option value="Design">Design</option>
+                        <option value="Furniture & Objects">Furniture & Objects</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="message">
+                <label for="message">Your message <span>*</span></label>
+                <textarea name="message" id="message" rows="3" placeholder="How can Right Angle help with your project?" required></textarea>
+            </div>
+
+            <div class="privacy-policy-text">
+                <p>By clicking "Send", I acknowledge receipt of the Right Angle Studio <a href="">Privaci Policy</a>.</p>
+                <p>Fields marked with an asterisk (<span>*</span>) are required.</p>
+            </div>
+            
+            <button type="submit" value="submit" class="main-btn">Send request</button>
+        </form>
+    </div>
+</section>
+
+<section id="faq" class="faq">
+    <h2>Frequently asked questions</h2>
+
+    <div class="question">
+        <div class="question-grp">
+            <p>How soon can I expect a response from you?</p>
+            <span class="spanClick">+</span>
+        </div>
+        <p class="hidden">That's great to hear! To contact us, you can either follow the "Get in touch / Contact us" link from on of the Services you would like for us to work on, or you can use the "Contact Us" form on the bottom of this page.</p>
+    </div>
+
+    <div class="question">
+        <div class="question-grp">
+            <p>I am interested in acquiring your services- how do I proceed?</p>
+            <span class="spanClick">+</span>
+        </div>
+        <p class="hidden">That's great to hear! To contact us, you can either follow the "Get in touch / Contact us" link from on of the Services you would like for us to work on, or you can use the "Contact Us" form on the bottom of this page.</p>
+    </div>
+
+    <div class="question">
+        <div class="question-grp">
+            <p>What is the difference between Simple & Advanced contact form?</p>
+            <span class="spanClick">+</span>
+        </div>
+        <p class="hidden">That's great to hear! To contact us, you can either follow the "Get in touch / Contact us" link from on of the Services you would like for us to work on, or you can use the "Contact Us" form on the bottom of this page.</p>
+    </div>
+
+    <div class="question">
+        <div class="question-grp">
+            <p>I am interested in acquiring your services- how do I proceed?</p>
+            <span class="spanClick">+</span>
+        </div>
+        <p class="hidden">That's great to hear! To contact us, you can either follow the "Get in touch / Contact us" link from on of the Services you would like for us to work on, or you can use the "Contact Us" form on the bottom of this page.</p>
+    </div>
+
+</section>
+
+<section id="moreQuestions" class="moreQuestions">
+    <h2>Still have questions?</h2>
+    <p>
+        If you have a question that hasn't been covered in our FAQ, feel free to contact us<br>   
+        at <span>info@rightanglestudio.com</span> and we will try to get back to you as soon as possible.
+    </p>
+</section>
+<%- include('partials/footer') -%>

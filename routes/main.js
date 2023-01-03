@@ -5,9 +5,15 @@ const homeController = require('../controllers/home')               // This impo
 const { ensureAuth, ensureGuest } = require('../middleware/auth')   //imports ensureAuth function from middleware
 
 router.get('/', homeController.getIndex)                 // "/todos" route calling getIndex method
+router.get('/about', homeController.getAbout)
+router.get('/services', homeController.getServices)
+router.get('/projects', homeController.getProjects)
+router.get('/contact', homeController.getContact)
+
 router.get('/login', authController.getLogin)            //"/todos/login" route with post get calling getLogin method
 router.post('/login', authController.postLogin)          //"/todos/login" route with post method calling postLogin method
 router.get('/logout', authController.logout)             //"/todos/logout" route with get method calling logout method
+router.post('/send', homeController.sendEmail)
 // router.get('/signup', authController.getSignup)       //"/todos/signup" route with get method calling getIndex method
 // router.post('/signup', authController.postSignup)     //"/todos/signup" route with post method calling getIndex method
 

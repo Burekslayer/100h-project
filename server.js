@@ -10,6 +10,8 @@ const connectDB = require('./config/database') //We are importing the connection
 const mainRoutes = require('./routes/main') // Imports the main routes
 const postRoutes = require('./routes/posts') // Importing the todo routes
 const cloudinary = require('cloudinary').v2;
+const nodemailer = require("nodemailer");
+const multiparty = require("multiparty");
 
 require('dotenv').config({path: './config/.env'}) // require the .env file
 
@@ -32,7 +34,21 @@ app.use(
       store: new MongoStore({ mongooseConnection: mongoose.connection }), //this will save cookie to mongoDB
     })
 )
-  
+const transporter = nodemailer.createTransport({
+  host: "smtp.gmail.com", //replace with your email provider
+  port: 587,
+  auth: {
+    user: process.env.EMAIL,
+    pass: process.env.PASS,
+  },
+});  
+transporter.verify(function (error, success) {
+  if (error) {
+    console.log(error);
+  } else {
+    console.log("Server is ready to take our messages");
+  }
+});
 // Passport middleware
 app.use(passport.initialize()) //initializing the passport
 app.use(passport.session()) // using passport session method

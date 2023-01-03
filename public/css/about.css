@@ -1,0 +1,157 @@
+html{
+    font-size: 62.5%;
+}
+
+/*    O FIRMI    */
+
+#about{
+    height: 30.3vw;
+    width: 100vw;
+    background-image: url(../images/about_main.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 7.5vw;
+    padding-top: 0.5vw;
+}
+#about img{
+    width: 3.5vw;
+    display: flex;
+    justify-content: center;
+    margin: 5vw auto 0 auto;
+}
+#about h1{
+    font-size: 2.5vw;
+    text-align: center;
+    margin-top: 1.5vw;
+    margin-bottom: 2.5vw;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+}
+#about p{
+    font-size: 1.1vw;
+    text-align: center;
+    line-height: 1.7vw;   
+}
+#about a{
+    text-align: center;
+    text-decoration: none;
+    color: #207792;
+    font-weight: 1000;
+}
+#about p > a > i{
+    margin-left: 0.5vw;
+    font-size: 0.9vw;
+}
+
+/*    O ARHITEKTAMA    */
+
+.about-architects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aa-header{
+    font-size: 2.5vw;
+    margin-top: 5vw;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+}
+.aa-header h2:after{
+    content: '';
+    position: absolute;
+    width: 20vw;
+    transform: scaleY(1);
+    height: 1vw;
+    top: 93.5%;
+    left: 40%;
+    background-color: #e6f3ff;
+    transform-origin: bottom right;
+    z-index: -1;
+}
+.aa-info{
+    display: flex;
+    width: 64vw;
+    justify-content: space-between;
+    margin-top: 5vw;
+}
+.aa-info img{
+    width: 29vw;
+
+}
+.aa-info h3{
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 2.2vw;
+    margin-top: 2vw;
+}
+.aa-info h3 + span{
+    font-size: 1.8vw;
+    color: #207792;
+}
+.aa-info p{
+    font-size: 1.1vw;
+    margin-top: 2vw;
+}
+.aa-info ul{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vw;
+    list-style: none;
+    font-size: 2.5vw;
+    width: 6vw;
+}
+.aa-info i{
+    color: #C7C7C7;
+    transition: 0.5s;
+}
+.aa-info i:hover{
+    color: #207792;
+    transition: 0.5s;
+}
+
+/*  MINI KONTAKT FORMA  */
+
+.mini-contact{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 6.5vw auto 7vw auto;
+    width: 77vw;
+    height: 8.33vw;
+    background: linear-gradient(111.33deg, #EAFBFF -11.49%, #FEF5FF 100.6%);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.103);
+}
+.mini-contact p{
+    font-size: 1.35vw;
+    color: #207792;
+}
+.mini-contact span{
+    font-weight: 1000;
+}
+.mc-btn{
+    display: flex;
+}
+.mc-btn-one{
+    cursor: pointer;
+    margin-right: 1.5%;
+    height: 3.4vw;
+    width: 12vw;
+    border-radius: 0;
+    border: 0;
+    background-color: #207792;
+    font-size: 1.1vw;
+    color: white;
+    margin-right: 1.5vw;
+}
+.mc-btn-two{
+    cursor: pointer;
+    margin-right: 1.5%;
+    height: 3.4vw;
+    width: 17.7vw;
+    border-radius: 0;
+    border: 0.08vw solid #207792; 
+    background-color: transparent;
+    font-size: 1.1vw;
+    font-weight: 400;
+    color: #207792;;
+}

@@ -1,0 +1,110 @@
+html{
+    font-size: 62.5%;
+}
+
+/* Info */
+
+.contact-main{
+    background: url(../images/contact-background-one.jpg), linear-gradient(124.49deg, #EAFBFF 7.05%, #FEF5FF 105.59%);
+    height: 30vw;
+    margin-top: 8vw;
+    margin-bottom: 8vw;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-main h2{
+    font-size: 5rem;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    margin-bottom: -0.5vw;
+}
+.contact-main h2 + h2{
+    color: #207792;
+    font-weight: 500;
+    margin-bottom: 3vw;
+}
+.contact-main p{
+    font-size: 2.4rem;
+    line-height: 3.7rem;
+}
+.contact-main
+
+/* FORMA */
+
+#homeContact.contactContact{
+    padding: 0;
+    background-image: url(../images/contact-render.png) !important;
+    background-size: contain;
+    width: 50vw;
+}
+#contact-contact{  /*glavna dva boxa*/
+    background-image: url(../images/contact-render.png) !important;
+    background-size: contain;
+    width: 50vw;
+}
+
+/* FAQ */
+.faq{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.faq h2{
+    font-size: 5rem;
+    margin-bottom: 3vw;
+}
+.question{
+    width: 65vw;
+    border: 1px solid #C1C8C8;
+    background: white;
+    margin-bottom: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.question-grp{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5vw 2.5vw 1.5vw 2.5vw;
+}
+.question-grp p{
+    font-size: 2.4rem;
+    padding-top: 0.5vw;
+}
+.question-grp span{
+    font-size: 4rem;
+}
+.question-grp span:hover{
+    cursor: pointer;
+}
+.question > p {
+    font-size: 2rem;
+    padding: 1.5vw 6vw 1.5vw 2.5vw;
+    color: #676C6C;
+}
+
+/* STA VAM NIJE JASNO?!?! */
+
+.moreQuestions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 6vw;
+    margin-top: 6vw
+}
+.moreQuestions h2{
+    font-size: 5rem;
+    margin-bottom: 3vw;
+}
+.moreQuestions p{
+    font-size: 2.4rem;
+    text-align: center;
+}
+.moreQuestions span{
+    color: #207792;
+    font-weight: 500;
+}

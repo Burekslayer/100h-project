@@ -1,0 +1,28 @@
+html{
+    font-size: 62.5%;
+}
+#services{
+    height: 30.3vw;
+    width: 100vw;
+    background-image: url(../images/service_main.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 7.5vw;
+    padding-top: 0.5vw;
+}
+#services h1{
+    font-size: 36px;
+    text-align: center;
+    margin-top: 6vw;
+    margin-bottom: 2.5vw;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+}
+#services h1 span{
+    color: #207792;  
+}
+#services p{
+    font-size: 16px;
+    text-align: center;
+    line-height: 24px;   
+}
