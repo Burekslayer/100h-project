@@ -25,6 +25,7 @@ app.use(express.static('public')) // includes all the files from public folder
 app.use(express.urlencoded({ extended: true })) ////Tells the express to decode and encode URLs where the header matches the content. Supports arrays and objects
 app.use(express.json()) //Parse Json content from incoming requests
 app.use(logger('dev')) //loggs the request comming to server
+app.use(cors())
 // Sessions
 app.use(
     session({ //making a cookie
