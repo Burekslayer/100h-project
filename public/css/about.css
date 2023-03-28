@@ -4,108 +4,112 @@ html{
 
 /*    O FIRMI    */
 
-#about{
-    height: 30.3vw;
-    width: 100vw;
-    background-image: url(../images/about_main.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-top: 7.5vw;
-    padding-top: 0.5vw;
-}
-#about img{
-    width: 3.5vw;
+.about{
+    background: url(../images/about_left.png) left bottom/230px no-repeat , url(../images/about_right.png) right bottom/230px no-repeat, linear-gradient(124.49deg, #EAFBFF 7.05%, #FEF5FF 105.59%) no-repeat;
+    margin-top: 100px;
+    height: 364px;
+    text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin: 5vw auto 0 auto;
+    align-items: center;
+    overflow: visible;
+    position: relative;
+    left: calc(-50vw + 50%);
+    width: 100vw;
 }
-#about h1{
-    font-size: 2.5vw;
-    text-align: center;
-    margin-top: 1.5vw;
-    margin-bottom: 2.5vw;
-    font-family: Poppins, sans-serif;
+.about h1{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 58px;
+    letter-spacing: 0.01em;
+    margin-bottom: 24px;
+}
+.about p{
+    font-size: 16px;
     font-weight: 400;
+    line-height: 24px; 
 }
-#about p{
-    font-size: 1.1vw;
-    text-align: center;
-    line-height: 1.7vw;   
+.about a{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.01em;
+    color: var(--torquise);
+    margin-top: 24px;
 }
-#about a{
-    text-align: center;
-    text-decoration: none;
-    color: #207792;
-    font-weight: 1000;
+.about p > a > i{
+    color: transparent;
+    margin-left: 7px;
+    font-size: 15px;
+    
+    transition: 0.5s;
 }
-#about p > a > i{
-    margin-left: 0.5vw;
-    font-size: 0.9vw;
+.about p > a:hover > i{
+    color: var(--torquise);
+    transition: 0.5s;
 }
 
 /*    O ARHITEKTAMA    */
-
+.about, .about-architects, .mini-contact{
+    margin-bottom: 128px;;
+}
 .about-architects{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.aa-header{
-    font-size: 2.5vw;
-    margin-top: 5vw;
-    font-family: Poppins, sans-serif;
-    font-weight: 400;
-}
-.aa-header h2:after{
-    content: '';
-    position: absolute;
-    width: 20vw;
-    transform: scaleY(1);
-    height: 1vw;
-    top: 93.5%;
-    left: 40%;
-    background-color: #e6f3ff;
-    transform-origin: bottom right;
-    z-index: -1;
+.aa-header h2{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: 0.01em;
 }
 .aa-info{
     display: flex;
-    width: 64vw;
+    width: 888px;
     justify-content: space-between;
-    margin-top: 5vw;
+    margin-top: 40px;
 }
 .aa-info img{
-    width: 29vw;
-
+    width: 420px;
+    margin-bottom: 24px;
 }
 .aa-info h3{
-    font-family: Poppins, sans-serif;
-    font-weight: 500;
-    font-size: 2.2vw;
-    margin-top: 2vw;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0.01em;
+    margin-bottom: 12px;
 }
 .aa-info h3 + span{
-    font-size: 1.8vw;
-    color: #207792;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    color: var(--torquise);
 }
 .aa-info p{
-    font-size: 1.1vw;
-    margin-top: 2vw;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    margin: 24px 0 24px 0;
 }
 .aa-info ul{
     display: flex;
-    justify-content: space-between;
-    margin-top: 2vw;
     list-style: none;
-    font-size: 2.5vw;
-    width: 6vw;
+    font-size: 32px;
 }
 .aa-info i{
     color: #C7C7C7;
     transition: 0.5s;
+    margin-right: 16px;
 }
 .aa-info i:hover{
-    color: #207792;
+    color: var(--torquise);
     transition: 0.5s;
 }
 
@@ -113,45 +117,82 @@ html{
 
 .mini-contact{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin: 6.5vw auto 7vw auto;
-    width: 77vw;
-    height: 8.33vw;
-    background: linear-gradient(111.33deg, #EAFBFF -11.49%, #FEF5FF 100.6%);
-    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.103);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 36px;
+    width: 1024px;
+    height: 120px;
+    background: linear-gradient(246.37deg, #FBF5FF 7.67%, #F2F9FF 63.58%, #F2F9FF 102.33%);
+    border-radius: 8px;
 }
 .mini-contact p{
-    font-size: 1.35vw;
-    color: #207792;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    color: var(--torquise);
 }
 .mini-contact span{
-    font-weight: 1000;
+    font-weight: 600;
 }
 .mc-btn{
     display: flex;
 }
+.mc-btn-one, .mc-btn-two{ 
+    height: 48px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    border-radius: 4px;
+    font-weight: 500;
+    padding-left: 10px;
+    transition: 0.5s;
+}
+.mc-btn i{
+    color: transparent;
+    font-size: 0px;
+    transition: 0.5s;
+}
 .mc-btn-one{
     cursor: pointer;
-    margin-right: 1.5%;
-    height: 3.4vw;
-    width: 12vw;
-    border-radius: 0;
-    border: 0;
-    background-color: #207792;
-    font-size: 1.1vw;
-    color: white;
-    margin-right: 1.5vw;
+    color: #ffffff;
+    width: 117px;
+    background: var(--torquise);
+    border: none;
+}
+.mc-btn-one:hover i{
+    color: #ffffff;
+    transition: 0.5s;
+    margin-left: 1px;
+    padding-left: 0;
+    margin-right: 0;
+    font-size: 14px;
+}
+.mc-btn-one:hover{
+    padding-left: 0;
+    margin-right: 0;
+    transition: 1s;
+    width: 130px;
+    background-color: var(--torqHover);
+}
+.mc-btn-two:hover i{
+    color: var(--torquise);
+    transition: 0;
+    margin-right: 5px;
+    font-size: 14px;
+}
+.mc-btn-two:hover{
+    padding-left: 7px;
+    margin-right: 0;
+    transition: 1s;
 }
 .mc-btn-two{
     cursor: pointer;
-    margin-right: 1.5%;
-    height: 3.4vw;
-    width: 17.7vw;
-    border-radius: 0;
-    border: 0.08vw solid #207792; 
+    color: var(--torquise);
+    width: 207px;
+    border: 1px solid var(--torquise);
+    margin-left: 20px;
     background-color: transparent;
-    font-size: 1.1vw;
-    font-weight: 400;
-    color: #207792;;
 }

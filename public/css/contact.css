@@ -2,107 +2,147 @@ html{
     font-size: 62.5%;
 }
 
+/* Sitnice */
+
+.contact-main, #homeContact, .faq{
+    margin-bottom: 128px;
+}
+.moreQuestions{
+    margin-bottom: 117.5px;
+}
+
 /* Info */
 
 .contact-main{
     background: url(../images/contact-background-one.jpg), linear-gradient(124.49deg, #EAFBFF 7.05%, #FEF5FF 105.59%);
-    height: 30vw;
-    margin-top: 8vw;
-    margin-bottom: 8vw;
+    margin-top: 100px;
+    height: 364px;
     background-repeat: no-repeat;
     background-size: 100vw;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    overflow: visible;
+    position: relative;
+    left: calc(-50vw + 50%);
+    width: 100vw;
 }
 .contact-main h2{
-    font-size: 5rem;
-    font-family: Poppins, sans-serif;
-    font-weight: 400;
+    font-size: 44px;
+    font-weight: 600;
     margin-bottom: -0.5vw;
+    line-height: 58px;
 }
 .contact-main h2 + h2{
     color: #207792;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 3vw;
 }
 .contact-main p{
-    font-size: 2.4rem;
-    line-height: 3.7rem;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
 }
-.contact-main
 
-/* FORMA */
-
-#homeContact.contactContact{
-    padding: 0;
-    background-image: url(../images/contact-render.png) !important;
-    background-size: contain;
-    width: 50vw;
-}
-#contact-contact{  /*glavna dva boxa*/
-    background-image: url(../images/contact-render.png) !important;
-    background-size: contain;
-    width: 50vw;
-}
 
 /* FAQ */
 .faq{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    
 }
 .faq h2{
-    font-size: 5rem;
-    margin-bottom: 3vw;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    margin-bottom: 12px;
 }
 .question{
-    width: 65vw;
-    border: 1px solid #C1C8C8;
-    background: white;
-    margin-bottom: 2vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 942px;
+    background: #FFFFFF;
+    border: 1px solid #ADB5BD;
+    border-radius: 4px;
+    padding: 32px;
+    margin-top: 28px;
+    transition: 1s;
+    
+
+    
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.question:hover{
+    cursor: pointer;
 }
 .question-grp{
     display: flex;
     justify-content: space-between;
-    padding: 1.5vw 2.5vw 1.5vw 2.5vw;
 }
-.question-grp p{
-    font-size: 2.4rem;
-    padding-top: 0.5vw;
-}
-.question-grp span{
-    font-size: 4rem;
+.question p, .question span{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
 }
 .question-grp span:hover{
     cursor: pointer;
 }
 .question > p {
-    font-size: 2rem;
-    padding: 1.5vw 6vw 1.5vw 2.5vw;
-    color: #676C6C;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    color: #6C757D;
+    margin-top: 15px;
 }
-
 /* STA VAM NIJE JASNO?!?! */
 
 .moreQuestions{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-bottom: 6vw;
-    margin-top: 6vw
+    justify-content: center;
+    position: relative;
+    left: calc(-50vw + 50%);
+    width: 100vw;
+    height: 246px;
+    background: linear-gradient(#EAFBFF 7.05%, #FEF5FF 105.59%);;
 }
 .moreQuestions h2{
-    font-size: 5rem;
-    margin-bottom: 3vw;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    margin-bottom: 24px;
 }
 .moreQuestions p{
-    font-size: 2.4rem;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
     text-align: center;
+    letter-spacing: 0.01em;
 }
 .moreQuestions span{
     color: #207792;

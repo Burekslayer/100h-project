@@ -4,18 +4,21 @@ html{
 footer{
     display: flex;
     flex-direction: column;
-    padding: 0 10vw !important;
+    align-items: center;
     background-color: white;
     box-shadow: 0 0 20vw 5vw white;
 }
-.footer span{
-    font-family: Poppins, sans-serif;
-    font-weight: 500;
+.footerMainServices a, .footerMainOther a{
+    line-height: 24px;
+    margin-bottom: 8px; 
 }
-.footerBtn{
-    border: 2.1px solid #207792;
-    border-radius: 2.5px;
-    margin-bottom: 2.5vw;
+.footerMain span{
+    line-height: 24px;
+    margin-bottom: 12px
+}
+.footer span{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
 }
 .footerBtn button > i{
     color: #207792;
@@ -62,69 +65,122 @@ footer{
 }
 .footerMain{
     display: flex;
-    justify-content: space-between;
-    padding: 0 1.5vw;
-    border-bottom: 2px dashed rgb(70, 70, 70);
+    margin-bottom: 32px;
+    height: 210px;
+    padding-top: 32px;
+    border-top: 2px solid #207792;
+    
+    width: 1180px;
 }
 .footerMain > div{
     display: flex;
     flex-direction: column;
+    
 }
 .footerMainLogo{
-    font-size: 0.9vw;
-    width: 18%;
-}
-.footerMainLogo > *{
-    margin-bottom: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 12px;
+    width: 187px;
+    margin-right: 131.5px;
 }
 .footerMainLogo > p {
-    line-height: 1.5vw;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
     text-align: justify;
     hyphens: auto;
 }
 .footerMainLogo img{
-    width: 9.2vw;
+    width: 138px;
 }
 .footerMain span{
-    font-size: 1vw;
-    font-weight: 1000;
+    font-size: 16px;
+    font-weight: 600;
 }
 .footerIcons{
-    font-size: 1.5vw;
+    font-size: 24px;
     display: flex;
-    width: 70%;
+    width: 90%;
     justify-content: space-between;
 }
+.footerIcons i{
+    
+    color: black;
+    transition: 0.5s;
+}
+.footerIcons i:hover{
+    color: #207792;
+    transition: 0.5s;
+}
 .footerMainServices{
-    line-height: 2vw;
+    line-height: 24px;
+    padding-top: 5px;
+    width: 200px;
+    margin-right: 64px;
+}
+.footerHovers{
+    color: #207792 !important;
+    font-weight: 600 !important;
+}
+.footerHovers i{
+    color: transparent;
+    font-size: 10px;
+    position: relative;
+    bottom: 5%;
+    left: 2%;
+    transition: 1s;
+}
+.footerHover:hover{  
+    color: var(--torqHover);
+}
+.footerHovers:hover i{
+    color: var(--torqHover);
+    transition: 1s;
 }
 .footerMainServices, .footerMainOther{
-    font-size: 0.85vw
+    font-size: 16px
 }
 .footerMainServices a, .footerMainOther a{
-    color: #777777;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #ADB5BD;
+    transition: 0.5s;
+}
+.footerMainServices a:hover, .footerMainOther a:hover{
+    /* color: #6C757D; */
+    color: #474c51;
+    transition: 0.5s;
 }
 .footerMainOther{
-    line-height: 2vw;
+    padding-top: 5px;
+    line-height: 24px;
+    width: 115px;
+    margin-right: 131.5px;
 }
 .footerMainFeatured{
-    width: 35%;
-    padding-top: 0.5vw;
-}
-.footerMainFeatured span{
-    margin-bottom: 0.5vw;
+    width: 372px;
+    
+    padding-top: 5px;
 }
 .footerMainFeatured > div{
     display: flex;
     align-items: center;
-    margin-bottom: 1vw;
     transition: 0.5s;
 }
 .footerMainFeatured > div p{
-    font-size: 0.8vw;
+    font-size: 12px;
     padding: 0.5vw 1.5vw;
     padding-bottom: 1vw;
-    color:rgb(70, 70, 70);
+    color:#ADB5BD
 }
 .footerFeaturedBold{
     font-size: 0.9vw;
@@ -137,10 +193,10 @@ footer{
     transition: 0.5s
 }
 .footerMainFeatured > div p > a {
-    line-height: 2vw;
+    font-size: 14px;
 }
 .footerMainFeatured img{
-    width: 10vw;
+    width: 160px;
 }
 .footerMainFeatured > div:hover a, .footerMainFeatured > div:hover i{
     color: #207792;
@@ -152,11 +208,17 @@ footer{
     cursor: pointer;
 }
 .footerInfo{
-    height: 3vw;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 0.5vw;
-    font-size: 0.85vw;
+    height: 50px;;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-top: 1px dashed #000000;
+    margin-bottom: 24px;
+    width: 1180px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
 }
 .footerInfo > div{
     width: 30%;
@@ -171,8 +233,17 @@ footer{
     border-right: 1px solid black;
 }
 .footerOl li{
+    position: relative;
+    top: 4px;
     text-align: center;
     width: 33%;
+}
+.footerOl li a{
+    display: inline-block;
+    height: 20px
+}
+.footerOl li:hover a{
+    border-bottom: 2px solid black;
 }
 .footerInfoImg{
     width: 5%;
@@ -183,12 +254,10 @@ footer{
 .lastFI{
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: end;
-    height: 1.5vw;
+    justify-content: flex-end;
 }
 .lastFI p{
-    margin-right: 0.5vw;
+    margin-right: 8px;
 }
 .lastFI p > span{
     font-weight: 1000;

@@ -74,6 +74,7 @@ async function markIncomplete(){
 const els = document.querySelector('select[name="countries"] option[value=""]');
 if(els){
     els.selected = true;
+    document.querySelector('#contact-form').reset();
 }
 const els2 = document.querySelector('select[name="service-type"] option[value=""]');
 if(els2){
@@ -121,18 +122,31 @@ function goToTop(){
 //___________FAQ DUGMADIJA____________//
 
 const faqBtn = document.querySelectorAll(".spanClick")
-
-faqBtn.forEach(span => span.addEventListener('click', () => {
+faqBtn.forEach(span => span.parentNode.addEventListener('click', () => {
     if(span.parentNode.nextElementSibling.className == 'hidden'){
         span.parentNode.nextElementSibling.className = ''
-        span.parentNode.style.color = '#207792'
         span.innerText = '-'
+        span.previousElementSibling.style.color = '#207792'
+        span.parentNode.parentNode.style.height = "159.8px";
+
     }else{
         span.parentNode.nextElementSibling.className = 'hidden'
-        span.parentNode.style.color = 'black'
         span.innerText = '+'
+        span.previousElementSibling.style.color = 'black'
+        span.parentNode.parentNode.style.height = "60.8px";
+
     }
 }))
+
+
+// Logo click
+
+// document.querySelector('.header img').addEventListener('click', {
+//     
+// })
+
+
+
 
 //______________CAROUSEL_________________//
 

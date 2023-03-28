@@ -73,7 +73,7 @@ module.exports = {
             to: process.env.EMAIL,
             subject: `New Request from ${data.firstName}`,
             text: ` NAME:  ${data.firstName + ' ' + data.lastName} <${data.email}>, \n MESSAGE:  ${data.message}, \n COUNTRY:  ${data.countries}, \n SERVICE TYPE:  ${data.serviceType}.`,
-    
+            
           };
       
           //3.

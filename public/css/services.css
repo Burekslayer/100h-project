@@ -1,28 +1,229 @@
 html{
     font-size: 62.5%;
 }
-#services{
-    height: 30.3vw;
-    width: 100vw;
-    background-image: url(../images/service_main.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-top: 7.5vw;
-    padding-top: 0.5vw;
-}
-#services h1{
-    font-size: 36px;
+.services{
+    background: url(../images/services_left.png) left bottom/180px no-repeat , url(../images/services_right.png) right/190px no-repeat, linear-gradient(270deg, #EAFBFF 7.05%, #FEF5FF 105.59%) no-repeat;
+    margin-top: 100px;
+    height: 364px;
     text-align: center;
-    margin-top: 6vw;
-    margin-bottom: 2.5vw;
-    font-family: Poppins, sans-serif;
-    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    position: relative;
+    left: calc(-50vw + 50%);
+    width: 100vw;
+    margin-bottom: 120px;
 }
-#services h1 span{
+.services h1{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 58px;
+    letter-spacing: 0.01em;
+    margin-bottom: 24px;
+}
+.services h1 span{
     color: #207792;  
 }
-#services p{
+.services p{
     font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; 
+}
+.service-main{
+    width: 1096px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.service{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.service-info{
+    display: flex;
+    flex-direction: column;
+    margin: 36px 0;
+}
+.service-info h2{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.01em;
+    margin-bottom: 12px;
+}
+.service-info span{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: var(--torquise);
+    margin-bottom: 36px;
+}
+.service-info p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    margin-bottom: 36px;
+    width: 452px;
+}
+.service-info button{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.01em;
+    height: 58px;
+    color: var(--torquise);
+    border: 1px solid var(--torquise);
+    border-radius: 4px;
+    background: none;
+}
+.service-btn-one{
+    width: 175px;
+}
+.service-btn-two{
+    width: 288px;
+}
+.service-btn-three{
+    width: 223px;
+}
+.service-info button:hover{
+    cursor: pointer;
+}
+.service-info button i{
+    color: transparent;
+    font-size: 0px;
+    transition: 0.5s;
+}
+.service-info button:hover i{
+    color: var(--torquise);
+    font-size: 14px;
+    margin-left: 10px;
+    transition: 0.5s;
+}
+.service-img img{
+    width: 580px;
+    height: auto;
+    border-radius: 8px;
+}
+.service-projects{
+    display: flex;
+    flex-direction: column;
+    width: 1130px;
+    margin: 0 auto;
+}
+.sp-div{
+    display: flex;
+    justify-content: space-between;
+}
+.sp-info{
+    margin-bottom: 36px;
+}
+.sp-info h3{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.01em;
+    align-self: center;
+}
+.sp-info a{
+    align-self: center;
+}
+.sp-info span{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
     text-align: center;
-    line-height: 24px;   
+    letter-spacing: 0.01em;
+    color: var(--torquise)
+}
+.sp-info span i{
+    color: transparent;
+    font-size: 12px;
+    margin-left: 8px;
+    transition: 0.5s;
+}
+.sp-info span:hover{
+    cursor: pointer;
+}
+.sp-info span:hover i{
+    color: var(--torquise);
+    transition: 0.5s;
+}
+.sp-images{
+    margin-bottom: 48px;
+}
+.sp-images div{
+    width: 350px;
+    overflow: hidden;
+}
+.sp-images div a{
+    display: flex;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+.sp-images div img{
+    margin: auto;
+    height: 350px;
+    filter: grayscale();
+    transition: 1s;
+}
+.sp-images div img:hover{
+    filter: none;
+    transition: 1s;
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+}
+.sp-images h4{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    margin-bottom: 4px;
+}
+.sp-images span{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+}
+.sp-btn{
+    align-self: center;
+    margin-bottom: 117.5px;
+}
+.sp-btn button{
+    width: 253px;
+    height: 58px;
+    background: #207792;
+    border-radius: 4px;
+    border: none;
+    padding: 16px 20px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.01em;
+    transition: 0.5s;
+}
+.sp-btn button:hover{
+    cursor: pointer;
+    background-color: var(--torqHover);
+    transition: 0.5s;
+}
+.sp-btn button i{
+    color: transparent;
+    font-size: 0;
+    margin-left: 8px;
+    transition: 0.5s;
+}
+.sp-btn button:hover i{
+    color: #ffffff;
+    font-size: 14px;
+    transition: 0.5s;
 }
